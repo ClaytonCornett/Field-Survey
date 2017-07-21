@@ -104,6 +104,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6jM-YE-bQM"/>
+                    <connections>
+                        <outlet property="fieldSurveyTableView" destination="YD6-dH-sft" id="qpa-yM-wgd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jy1-UT-O7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
