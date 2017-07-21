@@ -8,7 +8,9 @@
 
 import UIKit
 
-class fieldSurveyViewController: UIViewController {
+class fieldSurveyViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    let fieldSurveyEvent = FieldSurveyEventJSONLoader.load(fileName: "fieldsurvey_events")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,17 @@ class fieldSurveyViewController: UIViewController {
     }
     
 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return fieldSurveyEvent.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
     /*
     // MARK: - Navigation
 
