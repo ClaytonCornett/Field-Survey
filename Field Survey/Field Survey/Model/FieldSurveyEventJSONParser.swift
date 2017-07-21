@@ -34,7 +34,7 @@ class FieldSurveyEventJSONParser {
                            let dateString = observation["date"],
                            let date = dateFormatter.date(from: dateString){
                             
-                            if let fieldSurveyEvent = FieldSurveyEvent(classification: classification, title: title, description: description, date: date){
+                            if let fieldSurveyEvent = FieldSurveyEvent(classificationName: classification, title: title, description: description, date: date) {
                                 
                                 fieldSurveyEvents.append(fieldSurveyEvent)
                             }
@@ -46,6 +46,6 @@ class FieldSurveyEventJSONParser {
     
     
     
-    return fieldSurveyEvent
+    return fieldSurveyEvents
     }
 }

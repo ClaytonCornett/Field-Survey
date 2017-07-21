@@ -1,11 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yej-OP-8QP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="VbP-6k-n0w">
+            <objects>
+                <navigationController id="yej-OP-8QP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BC7-wG-IoM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CqC-0q-vgC" kind="relationship" relationship="rootViewController" id="cMP-S6-wpW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pPx-XY-pCE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-763" y="142"/>
+        </scene>
+        <!--Field Survey View Controller-->
+        <scene sceneID="fj9-63-23l">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="CqC-0q-vgC" customClass="fieldSurveyViewController" customModule="Field_Survey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uyt-qF-sMw"/>
+                        <viewControllerLayoutGuide type="bottom" id="cqs-KT-N15"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Luo-5g-DR5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YD6-dH-sft">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fieldSurveyCell" id="rZc-0W-Fts">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rZc-0W-Fts" id="Fbd-Ba-wdb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Tdb-W1-eFd" kind="show" id="T5f-JB-oGb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="CqC-0q-vgC" id="45K-2a-h1h"/>
+                                    <outlet property="delegate" destination="CqC-0q-vgC" id="B4d-7o-pl9"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cqs-KT-N15" firstAttribute="top" secondItem="YD6-dH-sft" secondAttribute="bottom" id="DtM-5R-8b9"/>
+                            <constraint firstAttribute="trailing" secondItem="YD6-dH-sft" secondAttribute="trailing" id="HqJ-iY-7sp"/>
+                            <constraint firstItem="YD6-dH-sft" firstAttribute="leading" secondItem="Luo-5g-DR5" secondAttribute="leading" id="f5A-Yp-h29"/>
+                            <constraint firstItem="YD6-dH-sft" firstAttribute="top" secondItem="Uyt-qF-sMw" secondAttribute="bottom" id="uUw-qX-01d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6jM-YE-bQM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jy1-UT-O7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="143"/>
+        </scene>
+        <!--Field Survey Detail View Controller-->
+        <scene sceneID="xWM-xf-twC">
+            <objects>
+                <viewController id="Tdb-W1-eFd" customClass="fieldSurveyDetailViewController" customModule="Field_Survey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Son-by-Emd"/>
+                        <viewControllerLayoutGuide type="bottom" id="eT6-hl-SbC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r1Q-a7-O8u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MsQ-D7-0Vb">
+                                <rect key="frame" x="0.0" y="64" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vki-op-JWA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="142"/>
+        </scene>
+    </scenes>
 </document>

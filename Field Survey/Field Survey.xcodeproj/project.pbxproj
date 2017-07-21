@@ -18,6 +18,8 @@
 		1C57ABB81F210D53002F9D7B /* FieldSurveyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57ABB71F210D53002F9D7B /* FieldSurveyEvent.swift */; };
 		1C57ABBA1F211435002F9D7B /* FieldSurveyEventJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57ABB91F211435002F9D7B /* FieldSurveyEventJSONParser.swift */; };
 		1C57ABBC1F212ED7002F9D7B /* FieldSurveyEventsJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57ABBB1F212ED7002F9D7B /* FieldSurveyEventsJSONLoader.swift */; };
+		1C57ABBE1F21ACAB002F9D7B /* fieldSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57ABBD1F21ACAB002F9D7B /* fieldSurveyViewController.swift */; };
+		1C57ABC01F21AD31002F9D7B /* fieldSurveyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57ABBF1F21AD31002F9D7B /* fieldSurveyDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		1C57ABB71F210D53002F9D7B /* FieldSurveyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyEvent.swift; sourceTree = "<group>"; };
 		1C57ABB91F211435002F9D7B /* FieldSurveyEventJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyEventJSONParser.swift; sourceTree = "<group>"; };
 		1C57ABBB1F212ED7002F9D7B /* FieldSurveyEventsJSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyEventsJSONLoader.swift; sourceTree = "<group>"; };
+		1C57ABBD1F21ACAB002F9D7B /* fieldSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fieldSurveyViewController.swift; sourceTree = "<group>"; };
+		1C57ABBF1F21AD31002F9D7B /* fieldSurveyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fieldSurveyDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 				1C57ABB71F210D53002F9D7B /* FieldSurveyEvent.swift */,
 				1C57ABB91F211435002F9D7B /* FieldSurveyEventJSONParser.swift */,
 				1C57ABBB1F212ED7002F9D7B /* FieldSurveyEventsJSONLoader.swift */,
+				1C57ABBD1F21ACAB002F9D7B /* fieldSurveyViewController.swift */,
+				1C57ABBF1F21AD31002F9D7B /* fieldSurveyDetailViewController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,6 +292,8 @@
 				1C57ABBA1F211435002F9D7B /* FieldSurveyEventJSONParser.swift in Sources */,
 				1C57AB831F210009002F9D7B /* AppDelegate.swift in Sources */,
 				1C57ABB81F210D53002F9D7B /* FieldSurveyEvent.swift in Sources */,
+				1C57ABBE1F21ACAB002F9D7B /* fieldSurveyViewController.swift in Sources */,
+				1C57ABC01F21AD31002F9D7B /* fieldSurveyDetailViewController.swift in Sources */,
 				1C57ABB61F2108AC002F9D7B /* Classification.swift in Sources */,
 				1C57ABBC1F212ED7002F9D7B /* FieldSurveyEventsJSONLoader.swift in Sources */,
 			);
