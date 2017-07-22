@@ -19,8 +19,9 @@ class fieldSurveyDetailViewController: UIViewController {
     
     @IBOutlet weak var observationIconImageView: UIImageView!
 
-    
     @IBOutlet weak var descriptionTextView: UITextView!
+    
+  //  @IBOutlet weak var descriptionTextView: UITextView!
     
     @IBOutlet weak var dateLabel: UILabel!
     
