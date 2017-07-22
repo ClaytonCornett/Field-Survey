@@ -13,6 +13,7 @@ enum Classification: String {
     case amphibian
     case bird
     case fish
+    case insect
     case mammal
     case plant
     case reptile

@@ -11,7 +11,7 @@ import UIKit
 class fieldSurveyViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var fieldSurveyTableView: UITableView!
-    let fieldSurveyEvents = FieldSurveyEventJSONLoader.load(fileName: "fieldsurvey_events")
+    let fieldSurveyEvents = FieldSurveyEventJSONLoader.load(fileName: "field_observations")
     
     let dateFormatter = DateFormatter()
 

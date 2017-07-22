@@ -58,8 +58,8 @@
 		1C57ABB71F210D53002F9D7B /* FieldSurveyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyEvent.swift; sourceTree = "<group>"; };
 		1C57ABB91F211435002F9D7B /* FieldSurveyEventJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyEventJSONParser.swift; sourceTree = "<group>"; };
 		1C57ABBB1F212ED7002F9D7B /* FieldSurveyEventsJSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyEventsJSONLoader.swift; sourceTree = "<group>"; };
-		1C57ABBD1F21ACAB002F9D7B /* fieldSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fieldSurveyViewController.swift; sourceTree = "<group>"; };
-		1C57ABBF1F21AD31002F9D7B /* fieldSurveyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fieldSurveyDetailViewController.swift; sourceTree = "<group>"; };
+		1C57ABBD1F21ACAB002F9D7B /* fieldSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = fieldSurveyViewController.swift; path = Model/fieldSurveyViewController.swift; sourceTree = "<group>"; };
+		1C57ABBF1F21AD31002F9D7B /* fieldSurveyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = fieldSurveyDetailViewController.swift; path = Model/fieldSurveyDetailViewController.swift; sourceTree = "<group>"; };
 		1C57ABC11F22994A002F9D7B /* FieldSurveyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +113,8 @@
 			children = (
 				1C57ABB01F21051D002F9D7B /* Model */,
 				1C57AB821F210009002F9D7B /* AppDelegate.swift */,
+				1C57ABBF1F21AD31002F9D7B /* fieldSurveyDetailViewController.swift */,
+				1C57ABBD1F21ACAB002F9D7B /* fieldSurveyViewController.swift */,
 				1C57AB861F21000A002F9D7B /* Main.storyboard */,
 				1C57AB891F21000A002F9D7B /* Assets.xcassets */,
 				1C57AB8B1F21000A002F9D7B /* LaunchScreen.storyboard */,
@@ -147,8 +149,6 @@
 				1C57ABB71F210D53002F9D7B /* FieldSurveyEvent.swift */,
 				1C57ABB91F211435002F9D7B /* FieldSurveyEventJSONParser.swift */,
 				1C57ABBB1F212ED7002F9D7B /* FieldSurveyEventsJSONLoader.swift */,
-				1C57ABBD1F21ACAB002F9D7B /* fieldSurveyViewController.swift */,
-				1C57ABBF1F21AD31002F9D7B /* fieldSurveyDetailViewController.swift */,
 				1C57ABC11F22994A002F9D7B /* FieldSurveyTableViewCell.swift */,
 			);
 			path = Model;
@@ -552,6 +552,7 @@
 				1C57ABA91F21000A002F9D7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C57ABAA1F21000A002F9D7B /* Build configuration list for PBXNativeTarget "Field SurveyTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +561,7 @@
 				1C57ABAC1F21000A002F9D7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C57ABAD1F21000A002F9D7B /* Build configuration list for PBXNativeTarget "Field SurveyUITests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +570,7 @@
 				1C57ABAF1F21000A002F9D7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
