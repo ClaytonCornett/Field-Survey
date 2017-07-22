@@ -140,12 +140,6 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNS-ur-eo7">
-                                <rect key="frame" x="16" y="144" width="343" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOG-u3-V54">
                                 <rect key="frame" x="81" y="79" width="278" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -158,27 +152,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0ed-oj-Z5H">
+                                <rect key="frame" x="16" y="137" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KG5-6X-DYq">
+                                <rect key="frame" x="16" y="290" width="343" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="UNS-ur-eo7" secondAttribute="trailing" id="M53-AU-bty"/>
+                            <constraint firstItem="KG5-6X-DYq" firstAttribute="top" secondItem="MsQ-D7-0Vb" secondAttribute="bottom" constant="15" id="GDH-zG-Gej"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="KG5-6X-DYq" secondAttribute="leading" id="GW5-6a-sdR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fOG-u3-V54" secondAttribute="trailing" id="P3l-Nn-DCZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KG5-6X-DYq" secondAttribute="trailing" id="RUS-cw-3in"/>
                             <constraint firstAttribute="leadingMargin" secondItem="MsQ-D7-0Vb" secondAttribute="leading" id="Usk-hJ-ODy"/>
                             <constraint firstItem="MsQ-D7-0Vb" firstAttribute="top" secondItem="Son-by-Emd" secondAttribute="bottom" constant="15" id="YkF-CW-xXW"/>
                             <constraint firstItem="fOG-u3-V54" firstAttribute="leading" secondItem="MsQ-D7-0Vb" secondAttribute="trailing" constant="15" id="Yw2-6D-qtQ"/>
                             <constraint firstItem="s4w-s3-c5U" firstAttribute="top" secondItem="fOG-u3-V54" secondAttribute="bottom" constant="8.5" id="Zdr-wx-7ki"/>
                             <constraint firstItem="s4w-s3-c5U" firstAttribute="leading" secondItem="MsQ-D7-0Vb" secondAttribute="trailing" constant="15" id="cAo-KL-21P"/>
                             <constraint firstItem="hv2-rx-V4b" firstAttribute="leading" secondItem="r1Q-a7-O8u" secondAttribute="leadingMargin" id="ccu-yW-JnH"/>
-                            <constraint firstItem="UNS-ur-eo7" firstAttribute="top" secondItem="MsQ-D7-0Vb" secondAttribute="bottom" constant="15" id="g5o-XK-9gu"/>
                             <constraint firstItem="fOG-u3-V54" firstAttribute="top" secondItem="Son-by-Emd" secondAttribute="bottom" constant="15" id="jdV-Y8-sMH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="s4w-s3-c5U" secondAttribute="trailing" id="qFp-Mw-ODb"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="UNS-ur-eo7" secondAttribute="leading" id="qdz-gj-VUn"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="animalNameLabel" destination="fOG-u3-V54" id="deB-H1-kjA"/>
                         <outlet property="dateLabel" destination="s4w-s3-c5U" id="z7C-3g-fJt"/>
-                        <outlet property="descriptionLabel" destination="UNS-ur-eo7" id="Y5q-Cy-otI"/>
+                        <outlet property="descriptionTextView" destination="KG5-6X-DYq" id="Bee-rs-fcO"/>
                         <outlet property="observationIconImageView" destination="MsQ-D7-0Vb" id="6gS-73-A5m"/>
                     </connections>
                 </viewController>

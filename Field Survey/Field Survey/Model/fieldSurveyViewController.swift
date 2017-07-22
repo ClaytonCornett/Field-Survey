@@ -49,6 +49,7 @@ class fieldSurveyViewController: UIViewController, UITableViewDelegate, UITableV
             cell.observationIconImageView.image = fieldSurveyEvent.classification.image
             cell.titleLabel.text = fieldSurveyEvent.title
             cell.dateLabel.text = dateFormatter.string(from: fieldSurveyEvent.date)
+   
         }
         
         return cell

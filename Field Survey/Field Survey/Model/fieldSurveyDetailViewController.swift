@@ -19,7 +19,8 @@ class fieldSurveyDetailViewController: UIViewController {
     
     @IBOutlet weak var observationIconImageView: UIImageView!
 
-    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBOutlet weak var descriptionTextView: UITextView!
     
     @IBOutlet weak var dateLabel: UILabel!
     
@@ -39,6 +40,7 @@ class fieldSurveyDetailViewController: UIViewController {
         self.title = "Observation"
         observationIconImageView.image = fieldSurveyEvent?.classification.image
         animalNameLabel.text = fieldSurveyEvent?.title
+        descriptionTextView.text = fieldSurveyEvent?.description
 
         if let date = fieldSurveyEvent?.date{
             dateLabel.text = dateFormatter.string(from: date)
